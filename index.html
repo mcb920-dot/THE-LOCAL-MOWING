@@ -30,7 +30,7 @@
     ],
     "serviceType": "Lawn Mowing Service",
     "priceRange": "$35-$65",
-    "openingHours": "Mo-Sa 07:00-19:00",
+    "openingHours": "Tu-Fr 07:00-19:00",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Lawn Mowing Services",
@@ -751,6 +751,67 @@
       box-shadow: 0 8px 28px rgba(0,0,0,0.3);
     }
 
+
+    /* ── HAMBURGER ── */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column; justify-content: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      padding: 8px; width: 40px; height: 40px;
+    }
+
+    .nav-hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--black);
+      transition: all 0.2s;
+    }
+
+    @media (max-width: 960px) {
+      .nav-hamburger { display: flex; }
+    }
+
+    /* ── MOBILE MENU ── */
+    .mobile-menu {
+      position: fixed; inset: 0; z-index: 300;
+      background: var(--white);
+      display: flex; flex-direction: column;
+      padding: 80px 8% 48px;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .mobile-menu.open { transform: translateX(0); }
+
+    .mobile-close {
+      position: absolute; top: 20px; right: 6%;
+      background: none; border: none;
+      font-size: 1.5rem; cursor: pointer;
+      color: var(--black);
+    }
+
+    .mobile-link {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.2rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.04em;
+      color: var(--black); text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--gray);
+      transition: color 0.15s;
+    }
+
+    .mobile-link:hover { color: var(--green); }
+
+    .mobile-cta {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.4rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--white); text-decoration: none;
+      background: var(--green);
+      padding: 18px 28px;
+      text-align: center;
+      margin-top: auto;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 960px) {
       .nav-links { display: none; }
@@ -805,7 +866,21 @@
     <li><a href="https://www.hubstak.app/quote/thelocalmowing" target="_blank" rel="noopener">Request a Quote</a></li>
     <li><a href="tel:+14793416772" class="nav-cta">(479) 341-6772</a></li>
   </ul>
+  <button class="nav-hamburger" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#pricing" class="mobile-link">Pricing</a>
+  <a href="#gallery" class="mobile-link">Gallery</a>
+  <a href="#area" class="mobile-link">Service Area</a>
+  <a href="https://www.hubstak.app/quote/thelocalmowing" target="_blank" class="mobile-link">Request a Quote</a>
+  <a href="tel:+14793416772" class="mobile-cta">(479) 341-6772</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -871,6 +946,36 @@
     <p>The Local Mowing is locally owned and based in Centerton, AR. We're not a franchise, not a call center — when you call, you reach us directly.</p>
     <p>Think of it like a great haircut. Anyone can cut hair, but the barber who <strong>takes their time, studies your head, and dials in the shape</strong> — that's the one you go back to. We approach every lawn the same way.</p>
     <p>The first few visits are about learning your yard: the grain, the edges, the trouble spots. We're building something, not just running through it. Every visit includes mowing, edging &amp; trimming, and blowing — no exceptions.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+  <div class="gallery-header">
+    <div>
+      <span class="label light">Our Work</span>
+      <h2 class="heading light">The Results<br>Speak.</h2>
+    </div>
+  </div>
+  <div class="gallery-grid">
+    <div class="g-item">
+      <img src="local-mowing-gallery.jpg" alt="Manicured residential lawn — Centerton AR" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-2.jpg" alt="Clean front yard with sidewalk edging" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-3.jpg" alt="Trimmed lawn with landscaped beds NWA" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-4.jpg" alt="Sharp curb edge front yard" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-5.jpg" alt="Back yard mowed and blown clean" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-6.jpg" alt="Side yard clean fence line mow" loading="lazy">
+    </div>
   </div>
 </section>
 
@@ -1002,37 +1107,7 @@
     <h3>Not Sure If We Cover Your Street?</h3>
     <p>Based in Centerton, we serve the surrounding Northwest Arkansas communities. Give us a call — if it's in range, we'll come to you.</p>
     <p>When you call, you reach a person — not a dispatcher, not an app. We know the area because we live here.</p>
-    <p style="margin-top:8px;"><strong>Mon – Sat, 7am – 7pm</strong></p>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="gallery">
-  <div class="gallery-header">
-    <div>
-      <span class="label light">Our Work</span>
-      <h2 class="heading light">The Results<br>Speak.</h2>
-    </div>
-  </div>
-  <div class="gallery-grid">
-    <div class="g-item">
-      <img src="local-mowing-gallery.jpg" alt="Manicured residential lawn — Centerton AR" loading="lazy">
-    </div>
-    <div class="g-item">
-      <img src="local-mowing-gallery-2.jpg" alt="Clean front yard with sidewalk edging" loading="lazy">
-    </div>
-    <div class="g-item">
-      <img src="local-mowing-gallery-3.jpg" alt="Trimmed lawn with landscaped beds NWA" loading="lazy">
-    </div>
-    <div class="g-item">
-      <img src="local-mowing-gallery-4.jpg" alt="Sharp curb edge front yard" loading="lazy">
-    </div>
-    <div class="g-item">
-      <img src="local-mowing-gallery-5.jpg" alt="Back yard mowed and blown clean" loading="lazy">
-    </div>
-    <div class="g-item">
-      <img src="local-mowing-gallery-6.jpg" alt="Side yard clean fence line mow" loading="lazy">
-    </div>
+    <p style="margin-top:8px;"><strong>Tue – Fri, 7am – 7pm</strong></p>
   </div>
 </section>
 
@@ -1103,7 +1178,7 @@
       <ul>
         <li><a href="tel:+14793416772">(479) 341-6772</a></li>
         <li>Centerton, AR</li>
-        <li>Mon–Sat, 7am–7pm</li>
+        <li>Tue–Fri, 7am–7pm</li>
         <li style="margin-top:8px; font-size:0.78rem; color:rgba(255,255,255,0.2);">Bentonville · Rogers · Pea Ridge<br>Bella Vista · Gravette</li>
       </ul>
     </div>
@@ -1119,6 +1194,20 @@
   <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
   (479) 341-6772
 </a>
+
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  const close = document.getElementById('mobileClose');
+
+  toggle.addEventListener('click', () => menu.classList.add('open'));
+  close.addEventListener('click', () => menu.classList.remove('open'));
+
+  menu.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => menu.classList.remove('open'));
+  });
+</script>
 
 </body>
 </html>
