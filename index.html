@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Local Mowing | Lawn Care in Centerton, AR | Northwest Arkansas</title>
+  <title>The Local Mowing | Lawn Care Centerton AR | Northwest Arkansas</title>
   <meta name="description" content="Intentional lawn mowing, trimming & blowing in Centerton, AR. Starting at $35. Locally owned. Serving Bentonville, Rogers, Pea Ridge & NWA. Call (479) 341-6772.">
-  <meta name="keywords" content="lawn mowing Centerton AR, lawn care Centerton Arkansas, lawn mowing service Northwest Arkansas, lawn mowing Bentonville, lawn care Rogers AR, grass cutting Centerton, lawn mowing near me, affordable lawn care NWA">
+  <meta name="keywords" content="lawn mowing Centerton AR, lawn care Centerton Arkansas, lawn mowing Northwest Arkansas, lawn mowing Bentonville, lawn care Rogers AR, grass cutting Centerton, lawn mowing near me, lawn care NWA">
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="US-AR">
   <meta name="geo.placename" content="Centerton, Arkansas">
@@ -13,7 +13,6 @@
   <meta property="og:title" content="The Local Mowing | Centerton, AR Lawn Care">
   <meta property="og:description" content="Intentional lawn care in Centerton, AR. Mowing, trimming & blowing starting at $35. First cut 10% off. Call (479) 341-6772.">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
 
   <script type="application/ld+json">
   {
@@ -31,844 +30,1035 @@
     ],
     "serviceType": "Lawn Mowing Service",
     "priceRange": "$35-$65",
-    "paymentAccepted": "Cash, Check, Venmo",
     "openingHours": "Mo-Sa 07:00-19:00",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Lawn Mowing Services",
       "itemListElement": [
-        {"@type": "Offer", "name": "Small Lawn (up to 1,000 sq ft)", "price": "35", "priceCurrency": "USD"},
-        {"@type": "Offer", "name": "Medium Lawn (1,000-2,000 sq ft)", "price": "45", "priceCurrency": "USD"},
-        {"@type": "Offer", "name": "Large Lawn (2,000-4,000 sq ft)", "price": "65", "priceCurrency": "USD"}
+        {"@type": "Offer", "name": "Small Lawn up to 1000 sq ft", "price": "35", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Medium Lawn 1000 to 2000 sq ft", "price": "45", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Large Lawn 2000 to 4000 sq ft", "price": "65", "priceCurrency": "USD"}
       ]
     }
   }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --green-deep:   #152e19;
-      --green-mid:    #1e4a24;
-      --green-bright: #2d6a35;
-      --cream:        #f4efe6;
-      --warm-white:   #fafaf7;
-      --off-white:    #f0ece3;
-      --charcoal:     #111110;
-      --text-body:    #2a2a27;
-      --text-muted:   #7a7870;
-      --gold:         #b8942e;
-      --gold-light:   #d4ae52;
+      --green:       #1a3d1e;
+      --green-dark:  #0f2412;
+      --green-mid:   #245229;
+      --green-light: #2d6a35;
+      --black:       #0a0a0a;
+      --white:       #ffffff;
+      --off-white:   #f5f5f3;
+      --gray:        #e8e8e6;
+      --gray-mid:    #c0c0bc;
+      --text:        #1a1a18;
+      --text-light:  #5a5a56;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--warm-white);
-      color: var(--text-body);
+      font-family: 'Barlow', sans-serif;
+      background: var(--white);
+      color: var(--text);
       overflow-x: hidden;
-      font-size: 16px;
-      line-height: 1.6;
     }
 
-    /* NAV */
+    /* ── NAV ── */
     nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-      background: #fff;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: var(--white);
+      border-bottom: 2px solid var(--black);
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 6%;
-      height: 76px;
-      border-bottom: 1px solid #e5e1d8;
+      padding: 0 5%;
+      height: 70px;
     }
 
     .nav-logo {
-      display: flex; align-items: center; gap: 14px;
+      display: flex; align-items: center; gap: 12px;
       text-decoration: none;
     }
 
-    .nav-logo img { height: 52px; width: 52px; object-fit: contain; }
+    .nav-logo img { height: 50px; width: 50px; object-fit: contain; }
 
-    .nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-
-    .nav-logo-text .brand {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.05rem; font-weight: 600;
-      color: var(--green-deep);
-      letter-spacing: 0.1em; text-transform: uppercase;
+    .nav-brand {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.35rem; font-weight: 800;
+      color: var(--green); letter-spacing: 0.04em;
+      text-transform: uppercase; line-height: 1;
     }
 
-    .nav-logo-text .sub {
-      font-size: 0.62rem; font-weight: 400;
-      color: var(--text-muted);
-      letter-spacing: 0.18em; text-transform: uppercase;
-      margin-top: 3px;
+    .nav-brand small {
+      display: block;
+      font-size: 0.6rem; font-weight: 500;
+      color: var(--text-light); letter-spacing: 0.15em;
+      margin-top: 2px;
     }
 
-    .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
 
     .nav-links a {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.78rem; font-weight: 400;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--text-muted); text-decoration: none;
-      transition: color 0.2s;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.9rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--text); text-decoration: none;
+      transition: color 0.15s;
     }
 
-    .nav-links a:hover { color: var(--green-deep); }
+    .nav-links a:hover { color: var(--green); }
 
     .nav-cta {
-      background: var(--green-deep) !important;
-      color: #fff !important;
+      background: var(--green) !important;
+      color: var(--white) !important;
       padding: 10px 22px !important;
-      font-weight: 600 !important;
-      letter-spacing: 0.1em !important;
     }
 
-    .nav-cta:hover { background: var(--green-mid) !important; }
+    .nav-cta:hover { background: var(--green-mid) !important; color: var(--white) !important; }
 
-    /* HERO */
+    /* ── HERO ── */
     .hero {
       position: relative;
-      height: 100vh; min-height: 640px;
+      height: 100vh; min-height: 600px;
       display: flex; align-items: center;
+      padding-top: 70px;
       overflow: hidden;
-      padding-top: 76px;
     }
 
     .hero-bg {
       position: absolute; inset: 0;
       background-image: url('local_mowing_hero.jpg');
-      background-size: cover; background-position: center 35%;
-      animation: hZoom 14s ease-out forwards;
+      background-size: cover;
+      background-position: center 40%;
+      animation: zoom 16s ease-out forwards;
     }
 
-    @keyframes hZoom {
-      from { transform: scale(1.06); }
-      to   { transform: scale(1.0); }
+    @keyframes zoom {
+      from { transform: scale(1.05); }
+      to { transform: scale(1.0); }
     }
 
     .hero-overlay {
       position: absolute; inset: 0;
       background: linear-gradient(
-        to top,
-        rgba(10,22,12,0.75) 0%,
-        rgba(10,22,12,0.45) 50%,
-        rgba(10,22,12,0.2) 100%
+        105deg,
+        rgba(10,18,12,0.88) 0%,
+        rgba(10,18,12,0.6) 50%,
+        rgba(10,18,12,0.2) 100%
       );
     }
 
     .hero-content {
       position: relative; z-index: 2;
-      padding: 0 6%;
-      max-width: 780px;
-      animation: fadeUp 0.9s ease-out 0.1s both;
+      padding: 0 5%;
+      max-width: 900px;
     }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .hero-location {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.72rem; letter-spacing: 0.3em;
-      text-transform: uppercase; color: var(--gold-light);
-      margin-bottom: 20px;
-      display: flex; align-items: center; gap: 10px;
-    }
-
-    .hero-location::before {
-      content: ''; display: block;
-      width: 28px; height: 1px; background: var(--gold);
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--green);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      padding: 6px 14px;
+      margin-bottom: 24px;
     }
 
     .hero h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: clamp(2.6rem, 5.5vw, 5.5rem);
-      font-weight: 700; line-height: 1.0;
-      color: #fff; text-transform: uppercase;
-      letter-spacing: -0.01em; margin-bottom: 24px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 900;
+      line-height: 0.92;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+      margin-bottom: 28px;
     }
 
-    .hero h1 em { font-style: normal; color: var(--gold-light); }
+    .hero h1 .outline {
+      -webkit-text-stroke: 2px var(--white);
+      color: transparent;
+    }
+
+    .hero h1 .green { color: #4CAF50; }
 
     .hero-desc {
-      font-size: 1.05rem; font-weight: 300;
-      color: rgba(255,255,255,0.65);
-      margin-bottom: 40px; max-width: 460px; line-height: 1.7;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.72);
+      max-width: 480px;
+      line-height: 1.65;
+      margin-bottom: 40px;
     }
 
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 56px; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 60px; }
 
     .btn {
-      display: inline-flex; align-items: center; gap: 10px;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.85rem; font-weight: 600;
+      display: inline-flex; align-items: center; gap: 9px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.95rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      text-decoration: none; padding: 14px 28px;
+      transition: all 0.18s;
+    }
+
+    .btn-white { background: var(--white); color: var(--black); }
+    .btn-white:hover { background: var(--off-white); }
+
+    .btn-outline-white {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+    .btn-outline-white:hover { border-color: var(--white); }
+
+    .btn-green { background: var(--green); color: var(--white); }
+    .btn-green:hover { background: var(--green-mid); }
+
+    .btn-black { background: var(--black); color: var(--white); }
+    .btn-black:hover { background: #222; }
+
+    .hero-numbers {
+      display: flex; gap: 0;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 28px;
+    }
+
+    .hero-num {
+      padding-right: 36px; margin-right: 36px;
+      border-right: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .hero-num:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+
+    .hero-num strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.4rem; font-weight: 900;
+      color: var(--white); display: block; line-height: 1;
+    }
+
+    .hero-num span {
+      font-size: 0.72rem; font-weight: 400;
+      color: rgba(255,255,255,0.45);
       letter-spacing: 0.12em; text-transform: uppercase;
-      text-decoration: none; padding: 15px 30px;
-      transition: all 0.2s; cursor: pointer;
+      margin-top: 4px; display: block;
     }
 
-    .btn-gold { background: var(--gold); color: var(--green-deep); border: 2px solid var(--gold); }
-    .btn-gold:hover { background: var(--gold-light); border-color: var(--gold-light); }
-
-    .btn-ghost { background: transparent; color: rgba(255,255,255,0.85); border: 1px solid rgba(255,255,255,0.3); }
-    .btn-ghost:hover { border-color: rgba(255,255,255,0.7); color: #fff; }
-
-    .btn-green { background: var(--green-deep); color: #fff; border: 2px solid var(--green-deep); }
-    .btn-green:hover { background: var(--green-mid); border-color: var(--green-mid); }
-
-    .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; }
-
-    .hero-stat { display: flex; flex-direction: column; gap: 2px; }
-
-    .hero-stat strong {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.8rem; font-weight: 700;
-      color: #fff; line-height: 1;
+    /* ── TICKER ── */
+    .ticker {
+      background: var(--green);
+      border-bottom: 3px solid var(--black);
+      padding: 14px 0;
+      overflow: hidden; white-space: nowrap;
     }
 
-    .hero-stat span {
-      font-size: 0.68rem; letter-spacing: 0.15em;
-      text-transform: uppercase; color: rgba(255,255,255,0.4);
-    }
-
-    /* MARQUEE */
-    .marquee-strip {
-      background: var(--green-deep);
-      border-bottom: 3px solid var(--gold);
-      padding: 16px 0; overflow: hidden; white-space: nowrap;
-    }
-
-    .marquee-track {
+    .ticker-track {
       display: inline-flex;
-      animation: marquee 32s linear infinite;
+      animation: tick 25s linear infinite;
     }
 
-    @keyframes marquee {
+    @keyframes tick {
       from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
+      to { transform: translateX(-50%); }
     }
 
-    .marquee-item {
-      display: inline-flex; align-items: center; gap: 16px;
-      padding: 0 40px;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.75rem; font-weight: 400;
-      letter-spacing: 0.22em; text-transform: uppercase;
-      color: rgba(255,255,255,0.6);
+    .ticker-item {
+      display: inline-flex; align-items: center; gap: 20px;
+      padding: 0 32px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
     }
 
-    .marquee-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
-
-    /* SECTION BASE */
-    section { scroll-margin-top: 76px; }
-
-    .eyebrow {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.65rem; letter-spacing: 0.38em;
-      text-transform: uppercase; color: var(--gold);
-      margin-bottom: 14px; display: block;
+    .ticker-sep {
+      width: 5px; height: 5px;
+      background: rgba(255,255,255,0.4);
+      transform: rotate(45deg);
+      flex-shrink: 0;
     }
 
-    .section-h {
-      font-family: 'Oswald', sans-serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 700; line-height: 1.0;
-      color: var(--green-deep); text-transform: uppercase;
+    /* ── SECTIONS ── */
+    section { scroll-margin-top: 70px; }
+
+    .label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--green);
+      display: block; margin-bottom: 12px;
+    }
+
+    .label.light { color: rgba(255,255,255,0.5); }
+
+    h2.heading {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 900;
+      line-height: 0.95;
+      color: var(--black);
+      text-transform: uppercase;
       letter-spacing: 0.01em;
     }
 
-    .section-h.light { color: #fff; }
+    h2.heading.light { color: var(--white); }
 
-    /* ABOUT */
-    .about { display: grid; grid-template-columns: 1fr 1fr; min-height: 620px; }
+    /* ── ABOUT ── */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 
-    .about-img { position: relative; overflow: hidden; background: var(--green-deep); display: flex; align-items: center; justify-content: center; padding: 0; }
-    .about-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    .about-visual {
+      background: var(--green-dark);
+      display: flex; align-items: center; justify-content: center;
+      padding: 60px 40px;
+      min-height: 560px;
+    }
 
-    .about-body {
-      background: var(--cream);
-      padding: 100px 8%;
+    .about-visual img {
+      width: 100%; max-width: 420px;
+      object-fit: contain;
+    }
+
+    .about-copy {
+      padding: 80px 7%;
       display: flex; flex-direction: column; justify-content: center;
+      border-left: 4px solid var(--black);
     }
 
-    .about-body p { font-size: 0.97rem; line-height: 1.85; color: var(--text-body); margin-top: 20px; }
+    .about-copy h2 { margin-bottom: 28px; }
 
-    /* PILLARS */
-    .pillars { background: var(--green-deep); padding: 100px 6%; }
+    .about-copy p {
+      font-size: 1rem; line-height: 1.8;
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
 
-    .pillars-header { max-width: 1200px; margin: 0 auto 64px; }
+    .about-copy p strong { color: var(--text); }
 
-    .pillars-grid {
+    /* ── WHY ── */
+    .why {
+      background: var(--black);
+      padding: 100px 5%;
+    }
+
+    .why-header {
+      max-width: 1200px; margin: 0 auto 64px;
+      display: flex; align-items: flex-end;
+      justify-content: space-between; gap: 40px;
+    }
+
+    .why-header a { flex-shrink: 0; }
+
+    .why-grid {
       max-width: 1200px; margin: 0 auto;
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 1px; background: rgba(255,255,255,0.05);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid rgba(255,255,255,0.08);
     }
 
-    .pillar {
-      background: var(--green-deep);
-      padding: 52px 44px;
-      border-top: 3px solid transparent;
-      transition: border-color 0.3s, background 0.3s;
-    }
-
-    .pillar:hover { border-top-color: var(--gold); background: var(--green-mid); }
-
-    .pillar-num {
-      font-family: 'Oswald', sans-serif;
-      font-size: 3.5rem; font-weight: 700;
-      color: rgba(255,255,255,0.05);
-      line-height: 1; margin-bottom: 24px;
-    }
-
-    .pillar h3 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.05rem; font-weight: 600;
-      letter-spacing: 0.08em; text-transform: uppercase;
-      color: #fff; margin-bottom: 14px;
-    }
-
-    .pillar p { font-size: 0.88rem; line-height: 1.78; color: rgba(255,255,255,0.5); font-weight: 300; }
-
-    /* PRICING */
-    .pricing { padding: 100px 6%; background: var(--warm-white); }
-    .pricing-inner { max-width: 1100px; margin: 0 auto; }
-    .pricing-header { margin-bottom: 60px; }
-
-    .pricing-layout {
-      display: grid; grid-template-columns: 1.4fr 1fr;
-      gap: 48px; align-items: start;
-    }
-
-    .pricing-table { border: 1px solid #e0dbd0; }
-
-    .pricing-row {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 24px 32px;
-      border-bottom: 1px solid #e8e4da;
+    .why-item {
+      padding: 48px 40px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
       transition: background 0.2s;
     }
 
-    .pricing-row:last-child { border-bottom: none; }
-    .pricing-row:hover { background: var(--off-white); }
+    .why-item:hover { background: rgba(255,255,255,0.03); }
+    .why-item:nth-child(3n) { border-right: none; }
+    .why-item:nth-child(4), .why-item:nth-child(5), .why-item:nth-child(6) { border-bottom: none; }
 
-    .pricing-row.featured { background: var(--green-deep); border-bottom-color: rgba(255,255,255,0.08); }
-    .pricing-row.featured:hover { background: var(--green-mid); }
-
-    .row-info { display: flex; flex-direction: column; gap: 3px; }
-
-    .row-size {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.95rem; font-weight: 600;
-      letter-spacing: 0.06em; text-transform: uppercase;
-      color: var(--green-deep);
+    .why-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.2em;
+      color: var(--green-light);
+      margin-bottom: 20px;
+      display: block;
     }
 
-    .pricing-row.featured .row-size { color: #fff; }
-
-    .row-note { font-size: 0.78rem; color: var(--text-muted); font-weight: 300; }
-    .pricing-row.featured .row-note { color: rgba(255,255,255,0.4); }
-
-    .row-price {
-      font-family: 'Oswald', sans-serif;
-      font-size: 2rem; font-weight: 700;
-      color: var(--green-bright); white-space: nowrap;
+    .why-item h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.3rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--white);
+      margin-bottom: 12px;
     }
 
-    .pricing-row.featured .row-price { color: var(--gold-light); }
-
-    .row-price sup { font-size: 1rem; font-weight: 400; vertical-align: super; }
-    .row-price sub { font-size: 0.72rem; font-weight: 300; color: var(--text-muted); }
-    .pricing-row.featured .row-price sub { color: rgba(255,255,255,0.35); }
-
-    .pricing-aside { display: flex; flex-direction: column; gap: 20px; }
-
-    .aside-block {
-      padding: 26px 28px;
-      background: var(--cream);
-      border-left: 3px solid var(--green-deep);
+    .why-item p {
+      font-size: 0.9rem; line-height: 1.75;
+      color: rgba(255,255,255,0.45);
+      font-weight: 300;
     }
 
-    .aside-block h4 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.65rem; letter-spacing: 0.28em;
-      text-transform: uppercase; color: var(--text-muted);
-      margin-bottom: 14px;
+    /* ── PRICING ── */
+    .pricing {
+      padding: 100px 5%;
+      background: var(--off-white);
     }
 
-    .aside-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .pricing-inner { max-width: 1100px; margin: 0 auto; }
 
-    .aside-list li {
-      font-size: 0.9rem; color: var(--text-body);
-      display: flex; align-items: baseline; gap: 10px; line-height: 1.5;
+    .pricing-top {
+      display: flex; align-items: flex-end;
+      justify-content: space-between; gap: 40px;
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 2px solid var(--black);
     }
 
-    .aside-list li::before { content: '—'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .pricing-table { margin-bottom: 0; }
 
-    .promo-block { background: var(--green-deep); padding: 32px; text-align: center; }
-
-    .promo-pct {
-      font-family: 'Oswald', sans-serif;
-      font-size: 3.5rem; font-weight: 700;
-      color: var(--gold-light); line-height: 1;
+    .p-row {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--gray);
     }
 
-    .promo-block p { font-size: 0.84rem; color: rgba(255,255,255,0.5); margin-top: 8px; line-height: 1.6; }
-    .promo-block strong { color: rgba(255,255,255,0.8); }
+    .p-row:first-child { border-top: 1px solid var(--gray); }
 
-    /* SERVICE AREA */
-    .service-area { background: var(--cream); padding: 100px 6%; }
+    .p-row-left { display: flex; flex-direction: column; gap: 3px; }
 
-    .area-inner {
-      max-width: 1100px; margin: 0 auto;
+    .p-size {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--black);
+    }
+
+    .p-note { font-size: 0.82rem; color: var(--text-light); }
+
+    .p-price {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.2rem; font-weight: 900;
+      color: var(--green);
+      line-height: 1;
+    }
+
+    .p-price span { font-size: 0.85rem; font-weight: 400; color: var(--text-light); }
+
+    .p-row.highlight { background: var(--green); padding: 22px 24px; margin: 0 -24px; }
+    .p-row.highlight .p-size { color: var(--white); }
+    .p-row.highlight .p-note { color: rgba(255,255,255,0.55); }
+    .p-row.highlight .p-price { color: var(--white); }
+    .p-row.highlight .p-price span { color: rgba(255,255,255,0.5); }
+
+    .pricing-aside {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2px;
+      background: var(--black);
+      margin-top: 40px;
+    }
+
+    .pa-block {
+      background: var(--white);
+      padding: 32px 28px;
+    }
+
+    .pa-block h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--gray);
+    }
+
+    .pa-list { list-style: none; }
+
+    .pa-list li {
+      font-size: 0.92rem; color: var(--text);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--gray);
+      display: flex; gap: 10px; align-items: baseline;
+    }
+
+    .pa-list li:last-child { border-bottom: none; }
+
+    .pa-list li::before {
+      content: '→';
+      color: var(--green);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .promo-aside {
+      background: var(--green);
+      padding: 32px 28px;
+    }
+
+    .promo-aside .promo-big {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 4rem; font-weight: 900;
+      color: var(--white); line-height: 1;
+      display: block;
+    }
+
+    .promo-aside p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      margin-top: 8px; line-height: 1.5;
+    }
+
+    .promo-aside strong { color: var(--white); }
+
+    /* ── AREA ── */
+    .area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .area-left {
+      background: var(--green);
+      padding: 80px 7%;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    .area-left h2 { margin-bottom: 28px; }
+
+    .area-left p {
+      font-size: 0.97rem; line-height: 1.8;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 16px;
+    }
+
+    .area-grid {
       display: grid; grid-template-columns: 1fr 1fr;
-      gap: 80px; align-items: center;
+      gap: 2px; margin-top: 32px; margin-bottom: 32px;
     }
-
-    .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
 
     .area-cell {
-      background: #fff; padding: 18px 22px;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.82rem; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--green-deep);
-      border-left: 3px solid transparent;
-      transition: all 0.2s;
+      background: rgba(255,255,255,0.08);
+      padding: 14px 18px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.9rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      transition: background 0.2s;
     }
 
-    .area-cell:hover { border-left-color: var(--gold); background: var(--off-white); }
+    .area-cell:hover { background: rgba(255,255,255,0.15); color: var(--white); }
 
-    .area-cell.primary {
+    .area-cell.home {
       grid-column: span 2;
-      background: var(--green-deep);
-      color: var(--gold-light);
-      border-left-color: var(--gold);
+      background: rgba(255,255,255,0.15);
+      color: var(--white);
     }
 
-    .area-text { display: flex; flex-direction: column; gap: 18px; }
+    .area-right {
+      background: var(--off-white);
+      padding: 80px 7%;
+      display: flex; flex-direction: column; justify-content: center;
+      border-left: 4px solid var(--black);
+    }
 
-    .area-text p { font-size: 0.97rem; line-height: 1.8; color: var(--text-body); }
+    .area-right h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.6rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.04em;
+      margin-bottom: 20px;
+    }
 
-    /* GALLERY */
-    .gallery { background: var(--charcoal); padding: 100px 6%; }
-    .gallery-inner { max-width: 1300px; margin: 0 auto; }
-    .gallery-hdr { margin-bottom: 48px; }
-    .gallery-hdr .eyebrow { color: var(--gold-light); }
+    .area-right p {
+      font-size: 0.97rem; line-height: 1.8;
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+
+    /* ── GALLERY ── */
+    .gallery {
+      background: var(--black);
+      padding: 80px 5%;
+    }
+
+    .gallery-header {
+      max-width: 1300px; margin: 0 auto 40px;
+      display: flex; justify-content: space-between; align-items: flex-end;
+    }
 
     .gallery-grid {
+      max-width: 1300px; margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3px;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 4px;
     }
 
-    .gallery-item { position: relative; overflow: hidden; aspect-ratio: 4/3; }
+    .g-item {
+      overflow: hidden;
+      position: relative;
+    }
 
-    .gallery-item:first-child { grid-column: span 2; aspect-ratio: 16/9; }
+    .g-item:first-child {
+      grid-row: span 2;
+    }
 
-    .gallery-item img {
+    .g-item img {
       width: 100%; height: 100%;
       object-fit: cover; display: block;
-      transition: transform 0.6s ease;
+      transition: transform 0.5s ease;
+      min-height: 220px;
     }
 
-    .gallery-item:hover img { transform: scale(1.05); }
+    .g-item:first-child img { min-height: 460px; }
 
-    /* CTA */
-    .cta-band {
-      background: var(--green-deep);
-      padding: 120px 6%; text-align: center;
-      position: relative; overflow: hidden;
+    .g-item:hover img { transform: scale(1.04); }
+
+    /* ── CTA ── */
+    .cta {
+      background: var(--white);
+      border-top: 4px solid var(--black);
+      padding: 100px 5%;
+      display: flex; align-items: center;
+      gap: 80px;
     }
 
-    .cta-band::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse at center, rgba(184,148,46,0.08) 0%, transparent 70%);
-      pointer-events: none;
+    .cta-left { flex: 1; }
+
+    .cta-left h2 { margin-bottom: 16px; }
+
+    .cta-left p {
+      font-size: 1rem; line-height: 1.75;
+      color: var(--text-light);
+      max-width: 440px;
     }
 
-    .cta-band .eyebrow { color: var(--gold-light); margin-bottom: 20px; }
-
-    .cta-band h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: clamp(2.8rem, 6vw, 5rem);
-      font-weight: 700; text-transform: uppercase;
-      color: #fff; line-height: 1.0; margin-bottom: 16px;
+    .cta-right {
+      flex-shrink: 0;
+      text-align: center;
     }
-
-    .cta-band h2 em { font-style: normal; color: var(--gold-light); }
-
-    .cta-band p { font-size: 0.97rem; color: rgba(255,255,255,0.45); margin-bottom: 48px; }
 
     .cta-number {
       display: block;
-      font-family: 'Oswald', sans-serif;
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      font-weight: 700; letter-spacing: 0.04em;
-      color: var(--gold-light); text-decoration: none;
-      margin-bottom: 12px; transition: color 0.2s;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.5rem, 4vw, 3.8rem);
+      font-weight: 900;
+      color: var(--green);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      line-height: 1;
+      margin-bottom: 12px;
+      transition: color 0.2s;
     }
 
-    .cta-number:hover { color: #fff; }
+    .cta-number:hover { color: var(--green-mid); }
 
-    .cta-note {
-      font-size: 0.68rem; letter-spacing: 0.22em;
-      text-transform: uppercase; color: rgba(255,255,255,0.2);
+    .cta-sub {
+      font-size: 0.72rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--text-light);
+      margin-bottom: 24px; display: block;
     }
 
-    /* FOOTER */
+    /* ── FOOTER ── */
     footer {
-      background: #0c180e;
-      border-top: 1px solid rgba(255,255,255,0.05);
-      padding: 64px 6% 32px;
+      background: var(--green-dark);
+      border-top: 4px solid var(--green);
+      padding: 60px 5% 28px;
     }
 
     .footer-grid {
       max-width: 1100px; margin: 0 auto;
-      display: grid; grid-template-columns: 1.6fr 1fr 1fr;
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr;
       gap: 60px;
-      padding-bottom: 48px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 24px;
     }
 
-    .footer-brand img { height: 48px; object-fit: contain; margin-bottom: 16px; display: block; }
-    .footer-brand p { font-size: 0.84rem; line-height: 1.7; color: rgba(255,255,255,0.3); max-width: 280px; }
+    .footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+
+    .footer-logo img { height: 44px; object-fit: contain; }
+
+    .footer-brand-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem; font-weight: 800;
+      color: var(--white); text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-desc {
+      font-size: 0.84rem; line-height: 1.7;
+      color: rgba(255,255,255,0.35);
+    }
 
     .footer-col h5 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.62rem; letter-spacing: 0.32em;
-      text-transform: uppercase; color: var(--gold);
-      margin-bottom: 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     .footer-col ul { list-style: none; }
 
-    .footer-col ul li { font-size: 0.84rem; color: rgba(255,255,255,0.35); margin-bottom: 10px; }
+    .footer-col li {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.45);
+      margin-bottom: 9px;
+    }
 
-    .footer-col ul li a { color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
-    .footer-col ul li a:hover { color: rgba(255,255,255,0.7); }
+    .footer-col a {
+      color: rgba(255,255,255,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: var(--white); }
 
     .footer-bottom {
-      max-width: 1100px; margin: 28px auto 0;
+      max-width: 1100px; margin: 0 auto;
       display: flex; justify-content: space-between;
-      font-size: 0.68rem; color: rgba(255,255,255,0.15);
-      letter-spacing: 0.05em;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.2);
     }
 
-    /* STICKY CALL */
-    .sticky-call {
-      position: fixed; bottom: 24px; right: 24px; z-index: 999;
-      display: flex; align-items: center; gap: 10px;
-      background: var(--green-deep); color: #fff;
-      text-decoration: none; padding: 14px 22px;
-      font-family: 'Oswald', sans-serif;
-      font-size: 0.88rem; font-weight: 600;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      border: 1px solid rgba(255,255,255,0.1);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-      transition: all 0.2s;
+    /* ── STICKY CALL ── */
+    .sticky {
       position: fixed;
+      bottom: 24px; right: 24px; z-index: 999;
+      display: flex; align-items: center; gap: 10px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 14px 24px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.95rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      border: 2px solid var(--green);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      transition: all 0.18s;
     }
 
-    .sticky-call::before {
-      content: ''; position: absolute; top: 0; left: 0;
-      width: 3px; height: 100%; background: var(--gold);
+    .sticky:hover {
+      background: var(--green-mid);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.3);
     }
 
-    .sticky-call:hover { background: var(--green-mid); transform: translateY(-2px); }
-
-    /* RESPONSIVE */
+    /* ── RESPONSIVE ── */
     @media (max-width: 960px) {
       .nav-links { display: none; }
       .about { grid-template-columns: 1fr; }
-      .about-img { height: 320px; }
-      .pillars-grid { grid-template-columns: 1fr; }
-      .pricing-layout { grid-template-columns: 1fr; }
-      .area-inner { grid-template-columns: 1fr; gap: 48px; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-      .gallery-item:first-child { grid-column: span 2; }
+      .about-visual { min-height: 300px; padding: 40px; }
+      .about-copy { border-left: none; border-top: 4px solid var(--black); }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-item { border-right: none; }
+      .why-item:nth-child(4), .why-item:nth-child(5), .why-item:nth-child(6) { border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .why-item:last-child { border-bottom: none; }
+      .pricing-aside { grid-template-columns: 1fr; }
+      .area { grid-template-columns: 1fr; }
+      .area-right { border-left: none; border-top: 4px solid var(--black); }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .g-item:first-child { grid-column: span 2; grid-row: span 1; }
+      .cta { flex-direction: column; gap: 40px; }
+      .cta-right { width: 100%; }
       .footer-grid { grid-template-columns: 1fr; gap: 36px; }
       .footer-bottom { flex-direction: column; gap: 6px; }
+      .why-header { flex-direction: column; align-items: flex-start; }
+      .pricing-top { flex-direction: column; align-items: flex-start; }
     }
 
     @media (max-width: 600px) {
       .hero h1 { font-size: 3rem; }
-      .hero-stats { gap: 24px; }
-      .gallery-grid { grid-template-columns: 1fr 1fr; }
-      .gallery-item:first-child { grid-column: span 2; }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .g-item:first-child { grid-column: span 1; }
       .area-grid { grid-template-columns: 1fr; }
-      .area-cell.primary { grid-column: span 1; }
-      .sticky-call { bottom: 16px; right: 16px; font-size: 0.8rem; padding: 12px 16px; }
+      .area-cell.home { grid-column: span 1; }
+      .hero-numbers { flex-direction: column; gap: 16px; }
+      .hero-num { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 16px; margin-bottom: 0; }
+      .hero-num:last-child { border-bottom: none; }
     }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav aria-label="Main navigation">
-  <a href="#" class="nav-logo" aria-label="The Local Mowing home">
+<nav>
+  <a href="#" class="nav-logo">
     <img src="local_mowing_logo_pro.png" alt="The Local Mowing logo">
-    <div class="nav-logo-text">
-      <span class="brand">The Local Mowing</span>
-      <span class="sub">Centerton, AR</span>
+    <div class="nav-brand">
+      The Local Mowing
+      <small>Centerton, AR</small>
     </div>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#service-area">Service Area</a></li>
+    <li><a href="#area">Service Area</a></li>
     <li><a href="tel:+14793416772" class="nav-cta">(479) 341-6772</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
-<section class="hero" aria-label="Hero">
-  <div class="hero-bg" role="img" aria-label="Manicured residential lawn in Centerton Arkansas"></div>
+<section class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-location">Centerton, AR &amp; Northwest Arkansas</p>
-    <h1>Mowing Done<br><em>Right.</em><br>Every Time.</h1>
+    <div class="hero-tag">Centerton, AR &amp; Northwest Arkansas</div>
+    <h1>
+      Mowing<br>
+      <span class="outline">Done</span><br>
+      <span class="green">Right.</span>
+    </h1>
     <p class="hero-desc">Intentional lawn care that trains your yard over time. Mowing, trimming &amp; blowing — done with care, not cut short.</p>
-    <div class="hero-actions">
-      <a href="tel:+14793416772" class="btn btn-gold">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+    <div class="hero-btns">
+      <a href="tel:+14793416772" class="btn btn-white">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
         Get a Free Quote
       </a>
-      <a href="#pricing" class="btn btn-ghost">View Pricing</a>
+      <a href="#pricing" class="btn btn-outline-white">See Pricing</a>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><strong>$35</strong><span>Starting Price</span></div>
-      <div class="hero-stat"><strong>10%</strong><span>First Cut Off</span></div>
-      <div class="hero-stat"><strong>NWA</strong><span>Service Area</span></div>
+    <div class="hero-numbers">
+      <div class="hero-num"><strong>$35</strong><span>Starting Price</span></div>
+      <div class="hero-num"><strong>10%</strong><span>First Cut Off</span></div>
+      <div class="hero-num"><strong>NWA</strong><span>Service Area</span></div>
     </div>
   </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee-strip" aria-hidden="true">
-  <div class="marquee-track">
-    <span class="marquee-item">Mowing<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Edging &amp; Trimming<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Blowing<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Centerton, AR<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Bentonville<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Rogers<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Pea Ridge<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Bella Vista<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Locally Owned<span class="marquee-dot"></span></span>
-    <span class="marquee-item">First Cut 10% Off<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Mowing<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Edging &amp; Trimming<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Blowing<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Centerton, AR<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Bentonville<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Rogers<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Pea Ridge<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Bella Vista<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Locally Owned<span class="marquee-dot"></span></span>
-    <span class="marquee-item">First Cut 10% Off<span class="marquee-dot"></span></span>
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Mowing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Edging &amp; Trimming<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Blowing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Centerton, AR<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Bentonville<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Rogers<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Pea Ridge<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Bella Vista<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Locally Owned<span class="ticker-sep"></span></span>
+    <span class="ticker-item">First Cut 10% Off<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Mowing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Edging &amp; Trimming<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Blowing<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Centerton, AR<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Bentonville<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Rogers<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Pea Ridge<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Bella Vista<span class="ticker-sep"></span></span>
+    <span class="ticker-item">Locally Owned<span class="ticker-sep"></span></span>
+    <span class="ticker-item">First Cut 10% Off<span class="ticker-sep"></span></span>
   </div>
 </div>
 
 <!-- ABOUT -->
-<section id="about" class="about" aria-labelledby="about-h">
-  <div class="about-img">
-    <img src="about-section.jpg" alt="The Local Mowing — first-time customers enjoy 10% off" loading="lazy">
+<section id="about" class="about">
+  <div class="about-visual">
+    <img src="about-section.jpg" alt="The Local Mowing — Centerton Arkansas lawn care">
   </div>
-  <div class="about-body">
-    <span class="eyebrow">Who We Are</span>
-    <h2 class="section-h" id="about-h">Your Neighbor.<br>Your Lawn Guy.</h2>
+  <div class="about-copy">
+    <span class="label">Who We Are</span>
+    <h2 class="heading">Your Neighbor.<br>Your Lawn Guy.</h2>
     <p>The Local Mowing is locally owned and based in Centerton, AR. We're not a franchise, not a call center — when you call, you reach us directly.</p>
-    <p>Think of it like a great haircut. Anyone can cut hair, but the barber who takes their time, studies your head, and dials in the shape — that's the one you go back to. We approach every lawn the same way. The first few visits are about learning it: the grain, the edges, the trouble spots. We're building something, not just running through it.</p>
-    <p>Every visit includes mowing, edging &amp; trimming, and blowing. That's the standard — no exceptions.</p>
+    <p>Think of it like a great haircut. Anyone can cut hair, but the barber who <strong>takes their time, studies your head, and dials in the shape</strong> — that's the one you go back to. We approach every lawn the same way.</p>
+    <p>The first few visits are about learning your yard: the grain, the edges, the trouble spots. We're building something, not just running through it. Every visit includes mowing, edging &amp; trimming, and blowing — no exceptions.</p>
   </div>
 </section>
 
-<!-- PILLARS -->
-<section class="pillars" aria-labelledby="pillars-h">
-  <div class="pillars-header">
-    <span class="eyebrow" style="color:var(--gold-light)">What Sets Us Apart</span>
-    <h2 class="section-h light" id="pillars-h">The Standard<br>We Hold Ourselves To.</h2>
+<!-- WHY -->
+<section class="why">
+  <div class="why-header">
+    <div>
+      <span class="label light">What Sets Us Apart</span>
+      <h2 class="heading light">The Standard<br>We Hold Ourselves To.</h2>
+    </div>
+    <a href="tel:+14793416772" class="btn btn-white">Call (479) 341-6772</a>
   </div>
-  <div class="pillars-grid">
-    <article class="pillar">
-      <div class="pillar-num">01</div>
+  <div class="why-grid">
+    <div class="why-item">
+      <span class="why-num">01</span>
       <h3>We Train Your Yard</h3>
-      <p>A lawn takes time to reach its best. We learn the grain, the growth patterns, the edges that need extra attention — and refine our approach each visit. The results compound over time.</p>
-    </article>
-    <article class="pillar">
-      <div class="pillar-num">02</div>
+      <p>A lawn takes time to reach its best. We learn the grain, growth patterns, and edges that need extra attention — refining our approach each visit. The results compound over time.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-num">02</span>
       <h3>On Time, Every Time</h3>
       <p>When we say we'll be there, we'll be there. Your schedule matters. Your lawn doesn't fall behind because we did — that's a promise we take seriously every week.</p>
-    </article>
-    <article class="pillar">
-      <div class="pillar-num">03</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">03</span>
       <h3>Upfront Pricing</h3>
-      <p>You know the price before we show up. Based on your lawn's size — nothing more, nothing less. No invoice surprises, no hidden fees, no awkward conversations after the fact.</p>
-    </article>
-    <article class="pillar">
-      <div class="pillar-num">04</div>
+      <p>You know the price before we show up. Based on your lawn's size — nothing more, nothing less. No invoice surprises. No hidden fees. No awkward conversations.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-num">04</span>
       <h3>Intentional, Not Rushed</h3>
-      <p>We take pride in the work. Mowing, trimming, edging, and blowing — done right, every time. If a line isn't clean, we fix it. We're not done until the yard looks the way it should.</p>
-    </article>
-    <article class="pillar">
-      <div class="pillar-num">05</div>
+      <p>Mowing, trimming, edging, and blowing — done right, every time. If a line isn't clean, we fix it. We're not done until the yard looks the way it should.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-num">05</span>
       <h3>Neighborhood Roots</h3>
-      <p>We live here. We mow here. These are our streets and our neighbors' yards. That's not marketing — that's accountability. Your reputation is our reputation, block by block.</p>
-    </article>
-    <article class="pillar">
-      <div class="pillar-num">06</div>
+      <p>We live here. We mow here. These are our streets and our neighbors' yards. Your reputation is our reputation — block by block, yard by yard.</p>
+    </div>
+    <div class="why-item">
+      <span class="why-num">06</span>
       <h3>Complete Every Visit</h3>
-      <p>Mowing. Edging and trimming. Blowing. All three, every time — included in the base price. Weed pulling available as an add-on. Just ask when you call.</p>
-    </article>
+      <p>Mowing. Edging and trimming. Blowing. All three, every time — included in every service. Weed pulling available as an add-on. Just ask when you call.</p>
+    </div>
   </div>
 </section>
 
 <!-- PRICING -->
-<section id="pricing" class="pricing" aria-labelledby="pricing-h">
+<section id="pricing" class="pricing">
   <div class="pricing-inner">
-    <div class="pricing-header">
-      <span class="eyebrow">Simple, Upfront Pricing</span>
-      <h2 class="section-h" id="pricing-h">You Know the Price<br>Before We Arrive.</h2>
-    </div>
-    <div class="pricing-layout">
-      <div class="pricing-table" role="list" aria-label="Lawn mowing pricing tiers">
-        <div class="pricing-row" role="listitem">
-          <div class="row-info">
-            <span class="row-size">Up to 1,000 sq ft</span>
-            <span class="row-note">Small yards &amp; tight lots</span>
-          </div>
-          <div class="row-price"><sup>$</sup>35<sub>/visit</sub></div>
-        </div>
-        <div class="pricing-row featured" role="listitem">
-          <div class="row-info">
-            <span class="row-size">1,000 – 2,000 sq ft</span>
-            <span class="row-note">Most Centerton homes</span>
-          </div>
-          <div class="row-price"><sup>$</sup>45<sub>/visit</sub></div>
-        </div>
-        <div class="pricing-row" role="listitem">
-          <div class="row-info">
-            <span class="row-size">2,000 – 4,000 sq ft</span>
-            <span class="row-note">Larger residential lots</span>
-          </div>
-          <div class="row-price"><sup>$</sup>65<sub>/visit</sub></div>
-        </div>
-        <div class="pricing-row" role="listitem">
-          <div class="row-info">
-            <span class="row-size">4,000+ sq ft</span>
-            <span class="row-note">Custom quoted by property</span>
-          </div>
-          <div class="row-price" style="font-size:1.3rem; color:var(--text-muted);">Custom</div>
-        </div>
+    <div class="pricing-top">
+      <div>
+        <span class="label">Simple, Upfront Pricing</span>
+        <h2 class="heading">You Know the Price<br>Before We Arrive.</h2>
       </div>
+      <a href="tel:+14793416772" class="btn btn-black">Get a Free Quote</a>
+    </div>
 
-      <div class="pricing-aside">
-        <div class="aside-block">
-          <h4>Frequency</h4>
-          <ul class="aside-list">
-            <li><strong>Weekly</strong> — Best results, healthiest lawn</li>
-            <li><strong>Bi-Weekly</strong> — Add $15 per visit</li>
-          </ul>
+    <div class="pricing-table">
+      <div class="p-row">
+        <div class="p-row-left">
+          <span class="p-size">Up to 1,000 sq ft</span>
+          <span class="p-note">Small yards &amp; tight lots</span>
         </div>
-        <div class="aside-block">
-          <h4>Every Visit Includes</h4>
-          <ul class="aside-list">
-            <li>Mowing</li>
-            <li>Edging &amp; Trimming</li>
-            <li>Blowing</li>
-          </ul>
+        <div class="p-price">$35<span>/visit</span></div>
+      </div>
+      <div class="p-row highlight">
+        <div class="p-row-left">
+          <span class="p-size">1,000 – 2,000 sq ft</span>
+          <span class="p-note">Most Centerton homes</span>
         </div>
-        <div class="aside-block">
-          <h4>Add-Ons</h4>
-          <ul class="aside-list">
-            <li>Weed pulling — ask for pricing</li>
-          </ul>
+        <div class="p-price">$45<span>/visit</span></div>
+      </div>
+      <div class="p-row">
+        <div class="p-row-left">
+          <span class="p-size">2,000 – 4,000 sq ft</span>
+          <span class="p-note">Larger residential lots</span>
         </div>
-        <div class="promo-block">
-          <div class="promo-pct">10% OFF</div>
-          <p>Your <strong>first service.</strong><br>New customers only. Mention when you call.</p>
+        <div class="p-price">$65<span>/visit</span></div>
+      </div>
+      <div class="p-row">
+        <div class="p-row-left">
+          <span class="p-size">4,000+ sq ft</span>
+          <span class="p-note">Custom quoted by property</span>
         </div>
+        <div class="p-price" style="font-size:1.4rem; color:var(--text-light);">Custom</div>
+      </div>
+    </div>
+
+    <div class="pricing-aside">
+      <div class="pa-block">
+        <h4>Frequency Options</h4>
+        <ul class="pa-list">
+          <li><strong>Weekly</strong> — Best results</li>
+          <li><strong>Bi-Weekly</strong> — Add $15/visit</li>
+        </ul>
+      </div>
+      <div class="pa-block">
+        <h4>Every Visit Includes</h4>
+        <ul class="pa-list">
+          <li>Mowing</li>
+          <li>Edging &amp; Trimming</li>
+          <li>Blowing</li>
+        </ul>
+      </div>
+      <div class="promo-aside">
+        <span class="promo-big">10%<br>OFF</span>
+        <p>Your <strong>first service.</strong> New customers only — mention when you call.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- SERVICE AREA -->
-<section id="service-area" class="service-area" aria-labelledby="area-h">
-  <div class="area-inner">
-    <div class="area-grid" role="list" aria-label="Cities we serve">
-      <div class="area-cell primary" role="listitem">Centerton, AR — Home Base</div>
-      <div class="area-cell" role="listitem">Bentonville</div>
-      <div class="area-cell" role="listitem">Rogers</div>
-      <div class="area-cell" role="listitem">Pea Ridge</div>
-      <div class="area-cell" role="listitem">Bella Vista</div>
-      <div class="area-cell" role="listitem">Gravette</div>
+<section id="area" class="area">
+  <div class="area-left">
+    <span class="label light">Where We Work</span>
+    <h2 class="heading light">Rooted in<br>Centerton.<br>Serving NWA.</h2>
+    <div class="area-grid">
+      <div class="area-cell home">Centerton, AR — Home Base</div>
+      <div class="area-cell">Bentonville</div>
+      <div class="area-cell">Rogers</div>
+      <div class="area-cell">Pea Ridge</div>
+      <div class="area-cell">Bella Vista</div>
+      <div class="area-cell">Gravette</div>
     </div>
-    <div class="area-text">
-      <span class="eyebrow">Where We Work</span>
-      <h2 class="section-h" id="area-h">Rooted in Centerton.<br>Serving All of NWA.</h2>
-      <p>Based in Centerton, we serve the surrounding Northwest Arkansas communities. Not sure if we cover your street? Call us — if it's in range, we'll come to you.</p>
-      <p>When you call, you reach a person — not a dispatcher, not an app. We know the area because we live here.</p>
-      <a href="tel:+14793416772" class="btn btn-green" style="align-self: flex-start; margin-top: 8px;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-        Check My Area
-      </a>
-    </div>
+    <a href="tel:+14793416772" class="btn btn-white" style="align-self:flex-start;">Check My Area</a>
+  </div>
+  <div class="area-right">
+    <h3>Not Sure If We Cover Your Street?</h3>
+    <p>Based in Centerton, we serve the surrounding Northwest Arkansas communities. Give us a call — if it's in range, we'll come to you.</p>
+    <p>When you call, you reach a person — not a dispatcher, not an app. We know the area because we live here.</p>
+    <p style="margin-top:8px;"><strong>Mon – Sat, 7am – 7pm</strong></p>
   </div>
 </section>
 
 <!-- GALLERY -->
-<section id="gallery" class="gallery" aria-labelledby="gallery-h">
-  <div class="gallery-inner">
-    <div class="gallery-hdr">
-      <span class="eyebrow">Our Work</span>
-      <h2 class="section-h light" id="gallery-h">The Results Speak.</h2>
+<section id="gallery" class="gallery">
+  <div class="gallery-header">
+    <div>
+      <span class="label light">Our Work</span>
+      <h2 class="heading light">The Results<br>Speak.</h2>
     </div>
-    <div class="gallery-grid" role="list" aria-label="Completed lawn mowing jobs in Northwest Arkansas">
-      <div class="gallery-item" role="listitem">
-        <img src="local-mowing-gallery.jpg" alt="Manicured residential lawn with clean edge lines — Centerton AR" loading="lazy">
-      </div>
-      <div class="gallery-item" role="listitem">
-        <img src="local-mowing-gallery-2.jpg" alt="Freshly mowed front yard with sidewalk edging in Centerton Arkansas" loading="lazy">
-      </div>
-      <div class="gallery-item" role="listitem">
-        <img src="local-mowing-gallery-3.jpg" alt="Residential property with trimmed lawn and landscaped beds in NWA" loading="lazy">
-      </div>
-      <div class="gallery-item" role="listitem">
-        <img src="local-mowing-gallery-4.jpg" alt="Clean mowed front yard with sharp curb edge" loading="lazy">
-      </div>
-      <div class="gallery-item" role="listitem">
-        <img src="local-mowing-gallery-5.jpg" alt="Back yard mowed and blown clean — Centerton Arkansas" loading="lazy">
-      </div>
-      <div class="gallery-item" role="listitem">
-        <img src="local-mowing-gallery-6.jpg" alt="Side yard with clean fence line mow and edge" loading="lazy">
-      </div>
+  </div>
+  <div class="gallery-grid">
+    <div class="g-item">
+      <img src="local-mowing-gallery.jpg" alt="Manicured residential lawn — Centerton AR" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-2.jpg" alt="Clean front yard with sidewalk edging" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-3.jpg" alt="Trimmed lawn with landscaped beds NWA" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-4.jpg" alt="Sharp curb edge front yard" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-5.jpg" alt="Back yard mowed and blown clean" loading="lazy">
+    </div>
+    <div class="g-item">
+      <img src="local-mowing-gallery-6.jpg" alt="Side yard clean fence line mow" loading="lazy">
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="cta-band" aria-labelledby="cta-h">
-  <span class="eyebrow">Ready to Book?</span>
-  <h2 id="cta-h">Need Your Lawn Cut<br><em>This Week?</em></h2>
-  <p>Call or text. We respond fast and schedule quickly.</p>
-  <a href="tel:+14793416772" class="cta-number">(479) 341-6772</a>
-  <p class="cta-note">Call or text &nbsp;·&nbsp; Free quote &nbsp;·&nbsp; First cut 10% off</p>
+<section class="cta">
+  <div class="cta-left">
+    <span class="label">Ready to Book?</span>
+    <h2 class="heading">Need Your Lawn<br>Cut This Week?</h2>
+    <p style="margin-top:16px;">Call or text for a free quote. We respond fast and get you scheduled quickly. First-time customers get 10% off their first service.</p>
+  </div>
+  <div class="cta-right">
+    <a href="tel:+14793416772" class="cta-number">(479) 341-6772</a>
+    <span class="cta-sub">Call or Text · Free Quote</span>
+    <a href="tel:+14793416772" class="btn btn-green" style="width:100%; justify-content:center;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      Call Now
+    </a>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand">
-      <img src="local_mowing_logo_pro.png" alt="The Local Mowing logo">
-      <p>Locally owned lawn care serving Centerton, AR and surrounding Northwest Arkansas communities. Mowing, trimming &amp; blowing — done right, every time.</p>
+    <div>
+      <div class="footer-logo">
+        <img src="local_mowing_logo_pro.png" alt="The Local Mowing">
+        <span class="footer-brand-name">The Local Mowing</span>
+      </div>
+      <p class="footer-desc">Locally owned lawn care serving Centerton, AR and surrounding Northwest Arkansas communities. Mowing, trimming &amp; blowing — done right, every time.</p>
     </div>
     <div class="footer-col">
       <h5>Services</h5>
@@ -887,18 +1077,19 @@
         <li><a href="tel:+14793416772">(479) 341-6772</a></li>
         <li>Centerton, AR</li>
         <li>Mon–Sat, 7am–7pm</li>
+        <li style="margin-top:8px; font-size:0.78rem; color:rgba(255,255,255,0.2);">Bentonville · Rogers · Pea Ridge<br>Bella Vista · Gravette</li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2025 The Local Mowing · Centerton, AR · All Rights Reserved</span>
-    <span>Bentonville · Rogers · Pea Ridge · Bella Vista · Gravette · NWA</span>
+    <span>Lawn Care · Northwest Arkansas</span>
   </div>
 </footer>
 
 <!-- STICKY CALL -->
-<a href="tel:+14793416772" class="sticky-call" aria-label="Call The Local Mowing">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+<a href="tel:+14793416772" class="sticky">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
   (479) 341-6772
 </a>
 
