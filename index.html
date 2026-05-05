@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Local Mowing | Lawn Mowing Service in Centerton, AR | Northwest Arkansas</title>
-  <meta name="description" content="Affordable, reliable lawn mowing service in Centerton, AR and surrounding areas. Starting at $25. No contracts. Mowing + edging included. Call or text (479) 341-6772 for a free quote.">
+  <meta name="description" content="Affordable, reliable lawn mowing service in Centerton, AR and surrounding areas. Starting at $35. No contracts. Mowing + edging included. Call or text (479) 341-6772 for a free quote.">
   <meta name="keywords" content="lawn mowing Centerton AR, lawn care Centerton Arkansas, lawn mowing service Northwest Arkansas, cheap lawn mowing Bentonville, lawn care Rogers AR, grass cutting Centerton, lawn mowing near me, affordable lawn care NWA">
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="US-AR">
@@ -13,7 +13,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="The Local Mowing | Centerton, AR Lawn Care">
-  <meta property="og:description" content="Fast, reliable, affordable lawn mowing in Centerton, AR. Starting at $25. First cut 10% off. Call (479) 341-6772.">
+  <meta property="og:description" content="Fast, reliable, affordable lawn mowing in Centerton, AR. Starting at $35. First cut 10% off. Call (479) 341-6772.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
 
@@ -33,14 +33,14 @@
       {"@type": "City", "name": "Bella Vista", "containedIn": {"@type": "State", "name": "Arkansas"}}
     ],
     "serviceType": "Lawn Mowing Service",
-    "priceRange": "$25-$50",
+    "priceRange": "$35-$50",
     "paymentAccepted": "Cash, Check, Venmo",
     "openingHours": "Mo-Sa 07:00-19:00",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Lawn Mowing Services",
       "itemListElement": [
-        {"@type": "Offer", "name": "Small Lawn (up to 1,000 sq ft)", "price": "25", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Small Lawn (up to 1,000 sq ft)", "price": "35", "priceCurrency": "USD"},
         {"@type": "Offer", "name": "Medium Lawn (1,000–2,000 sq ft)", "price": "35", "priceCurrency": "USD"},
         {"@type": "Offer", "name": "Large Lawn (2,000–4,000 sq ft)", "price": "50", "priceCurrency": "USD"}
       ]
@@ -285,33 +285,7 @@
       background: rgba(255,255,255,0.08);
     }
 
-    .hero-phone-strip {
-      position: absolute; bottom: 0; right: 0;
-      background: var(--gold);
-      padding: 18px 40px;
-      display: flex; align-items: center; gap: 12px;
-      z-index: 3;
-      animation: heroFadeUp 0.9s ease-out 0.5s both;
-    }
 
-    .hero-phone-strip svg { color: var(--green-deep); }
-
-    .hero-phone-strip a {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.5rem; font-weight: 700;
-      color: var(--green-deep);
-      text-decoration: none;
-      letter-spacing: 0.04em;
-    }
-
-    .hero-phone-strip span {
-      font-size: 0.7rem;
-      color: var(--green-deep);
-      font-family: 'Oswald', sans-serif;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      display: block;
-    }
 
     /* ─── TRUST BAR ─── */
     .trust-bar {
@@ -844,6 +818,37 @@
       .area-cities { grid-template-columns: 1fr; }
       .area-city.main { grid-column: span 1; }
     }
+
+    /* ─── STICKY CALL BUTTON ─── */
+    .sticky-call {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 999;
+      display: flex; align-items: center; gap: 10px;
+      background: var(--green-deep);
+      color: white;
+      text-decoration: none;
+      padding: 14px 24px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+      transition: all 0.25s;
+      border: 2px solid var(--gold);
+    }
+    .sticky-call:hover {
+      background: var(--green-mid);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+    .sticky-call svg { color: var(--gold); flex-shrink: 0; }
+    @media (max-width: 600px) {
+      .sticky-call {
+        bottom: 16px; right: 16px;
+        padding: 12px 18px;
+        font-size: 0.88rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -877,7 +882,7 @@
   <div class="hero-content">
     <p class="hero-eyebrow">Centerton, AR &amp; Northwest Arkansas</p>
     <h1>Mowing Done<br><em>Right.</em> Every Time.</h1>
-    <p class="hero-sub">Fast, reliable lawn mowing with no contracts and no hassle. Starting at just $25 — your neighbors already trust us.</p>
+    <p class="hero-sub">Intentional lawn care that trains your yard to its best. Mowing, trimming &amp; blowing — starting at $35.</p>
 
     <div class="hero-badges">
 <div class="badge">
@@ -906,13 +911,7 @@
     </div>
   </div>
 
-  <div class="hero-phone-strip" aria-label="Contact phone number">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-    <div>
-      <span>Call or Text Today</span>
-      <a href="tel:+14793416772">(479) 341-6772</a>
-    </div>
-  </div>
+
 </section>
 
 <!-- ─── TRUST BAR ─── -->
@@ -964,10 +963,10 @@
 
       <article class="why-card" role="listitem">
         <div class="why-card-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
         </div>
-        <h3>Fast Turnaround</h3>
-        <p>We move fast without cutting corners. Your lawn gets the full treatment — mow, edge, cleanup — and we're out of your way so you can enjoy your yard, not watch us work in it all afternoon.</p>
+        <h3>We Train Your Yard</h3>
+        <p>Think of it like a great haircut — anyone can cut hair, but the barber who takes their time, studies your head, and dials in the shape? That's the one you go back to. We approach every lawn the same way. The first few cuts are about learning it — the grain, the edges, the trouble spots. We're not rushing through. We're building something.</p>
       </article>
 
       <article class="why-card" role="listitem">
@@ -1020,7 +1019,7 @@
               <span class="tier-size">Up to 1,000 sq ft</span>
               <span class="tier-desc">Small yards, tight lots</span>
             </div>
-            <div class="tier-price">$25<span>/visit</span></div>
+            <div class="tier-price">$45<span>/visit</span></div>
           </div>
           <div class="tier" role="listitem">
             <div class="tier-info">
@@ -1034,7 +1033,7 @@
               <span class="tier-size">2,000 – 4,000 sq ft</span>
               <span class="tier-desc">Larger residential lots</span>
             </div>
-            <div class="tier-price">$50<span>/visit</span></div>
+            <div class="tier-price">$65<span>/visit</span></div>
           </div>
           <div class="tier" role="listitem">
             <div class="tier-info">
@@ -1241,6 +1240,13 @@
     <span>Serving Centerton · Bentonville · Rogers · Pea Ridge · Bella Vista · NWA</span>
   </div>
 </footer>
+
+
+<!-- ─── STICKY CALL BUTTON ─── -->
+<a href="tel:+14793416772" class="sticky-call" aria-label="Call The Local Mowing">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+  (479) 341-6772
+</a>
 
 </body>
 </html>
